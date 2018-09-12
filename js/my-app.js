@@ -195,7 +195,14 @@ if (qrStr) {
     client.open('GET', 'https://dl.dropboxusercontent.com' + qrStr);
     client.setRequestHeader('Content-Type', 'text/xml');
     client.overrideMimeType('text/xml')
-    client.send();
+    try
+    {
+      client.send();
+    }
+    catch (err)
+    {
+      showBlockedUI();
+    }
   } else {
     showErrorUI();
   }
@@ -236,6 +243,12 @@ function showAllBuilds(){
 function showErrorUI(){
   mainView.router.load({ pageName: 'error' });
   insertAdsOnDiv('error-ads');
+}
+
+//Show Blocked UI
+function showBlockedUI(){
+  mainView.router.load({ pageName: 'blocked' });
+  insertAdsOnDiv('blocked-ads');
 }
 
 //Show More Details
