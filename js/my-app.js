@@ -66,9 +66,6 @@ if (qrStr) {
   } else if (qrStr.indexOf('appinfo.json') != -1) {
     var client = new XMLHttpRequest();
     client.timeout = 60000;
-    client.ontimeout = function() {
-      showBlockedUI();
-    };
     client.onreadystatechange = function () {
       if (client.readyState == 4 && client.status == 200) {
         try {
