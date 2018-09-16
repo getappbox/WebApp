@@ -1,9 +1,9 @@
 # AppBox Installation Web App Repository
-Production Repo of AppBox Installation Web App. Available here at https://tryapp.github.io/
+Production Repo of AppBox Installation Web App. Available here at https://web.getappbox.com
 
 
 # Contributions ❤️
-Interested in contributing to AppBox Installation Web App? We'd love your help. [AppBox](https://tryappbox.github.io) is an open source project, built one contribution at a time by users like you. We are accepting pull request only on [this development repository](https://github.com/TryApp/development).
+Interested in contributing to AppBox Installation Web App? We'd love your help. [AppBox](https://web.getappbox.com) is an open source project, built one contribution at a time by users like you. We are accepting pull request only on [this development repository](https://github.com/getappbox/WebApp-Dev).
 
 
 # License
